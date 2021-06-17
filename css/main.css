@@ -1977,7 +1977,7 @@ input, select, textarea {
 				float: left;
 				line-height: 4.5em;
 				padding-left: 1.5em;
-				font-size: 1.1em;
+				
 			}
 
 				#nav ul li a, #nav ul li span {
@@ -1991,6 +1991,7 @@ input, select, textarea {
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
+					font-size: 1.1em;
 				}
 
 				#nav ul li > ul {
