@@ -1970,14 +1970,14 @@ input, select, textarea {
 
 		#nav ul {
 			list-style: none;
-			padding-left: 0;
-			font-size: 1.1em;
+			padding-left: 0;			
 		}
 
 			#nav ul li {
 				float: left;
 				line-height: 4.5em;
-				padding-left: 1.5em;				
+				padding-left: 1.5em;
+				font-size: 1.1em;
 			}
 
 				#nav ul li a, #nav ul li span {
