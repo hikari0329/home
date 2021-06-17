@@ -1991,7 +1991,7 @@ input, select, textarea {
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
-					font-size: 1.1em;
+					
 				}
 
 				#nav ul li > ul {
@@ -2004,6 +2004,7 @@ input, select, textarea {
 
 				#nav ul li.active a, #nav ul li.active span {
 					background: #fff;
+					font-size: 1.1em;
 				}
 
 				#nav ul li.current a {
