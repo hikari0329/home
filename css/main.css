@@ -1,0 +1,384 @@
+/* RESET */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+*, *:before, *:after { box-sizing: border-box; }
+img,
+object,
+embed {max-width: 100%;}
+html {overflow-y: scroll;}
+ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+input, select {vertical-align: middle;}
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+select, input, textarea {font: 99% sans-serif;}
+table {font-size: inherit; font: 100%;}
+small {font-size: 85%;}
+strong {font-weight: bold;}
+td, td img {vertical-align: top;} 
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+input[type=file], 
+button {cursor: pointer;}
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+/* FONTS */
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../fonts/montserrat-regular.eot');
+    src: url('../fonts/montserrat-regular.eot') format('embedded-opentype'),
+         url('../fonts/montserrat-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-regular.woff') format('woff'),
+         url('../fonts/montserrat-regular.ttf') format('truetype'),
+         url('../fonts/montserrat-regular.svg#MontserratRegular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/montserrat-bold.eot');
+    src: url('../fonts/montserrat-bold.eot') format('embedded-opentype'),
+         url('../fonts/montserrat-bold.woff2') format('woff2'),
+         url('../fonts/montserrat-bold.woff') format('woff'),
+         url('../fonts/montserrat-bold.ttf') format('truetype'),
+         url('../fonts/montserrat-bold.svg#MontserratBold') format('svg');
+}
+
+
+/* STYLES */
+body { font-family: 'MontserratRegular', Helvetica; font-size:14px; letter-spacing:1px; line-height:1.5; color:#333333; background-color:#fff;  }
+input , select { font-family: 'MontserratRegular', Helvetica; letter-spacing:1px; color:#333333; }
+/*.clearfix { clear: both; }*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: block; clear: both; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+/** {
+	-webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; }*/
+img , img a {
+  -webkit-transition: none;
+  -o-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  transition: none; }
+a img:hover { opacity: .75; }
+.left { float:left; }
+.right { float:right; }
+a { text-decoration:none; color:#333333; }
+a:hover { color:#999;  }
+/*background: url(../images/bg_nav_cart_1.png) no-repeat;*/
+
+
+header { height:80px; }
+header a { width:120px; height:30px; display:block; background: url(../images/bg_logo_header5.png) no-repeat; background-size: 120px 30px; margin:32px 0 0 50px; float:left; }
+/*header a { width:80px; height:37px; display:block; background: url(../images/bg_logo_footer.png) no-repeat; background-size: 80px 37px; margin:24px 0 0 50px; float:left; }*/
+header a:hover , button#showRightPush:hover {-webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; opacity: .75; }
+button#showRightPush { width:30px; height:22px; display:block; background:none; border:none; background: url(../images/bg_nav_header.png) no-repeat; background-size: 30px 22px; font-size:0; text-indent:-9999px; float:right; margin:32px 50px 0 0; }
+
+div#google_login {float:right; margin:26px 40px 0 0;display:flex; }
+div#persoanl_info {float:right; margin:30px 40px 0 0;display:flex; }
+button#google_logout {float:right; margin:26px 40px 0 0;display:flex; }
+
+article { background-color:#F7F7F7; }
+#content { padding:80px 20px; }
+#content h2 { font-size:36px; text-transform:uppercase; text-align:center; margin-bottom:40px; line-height:1.0; font-family: 'MontserratBold', Helvetica; }
+#content > hr { height:1px; border:none; border-bottom:#e6e6e6 solid 1px; margin:80px auto; width:100%; max-width:1200px; }
+#content p.description { max-width:900px; width:100%; margin:0 auto 80px; text-align:center; }
+#content .portfolio li { margin-bottom:10%; }
+#content .portfolio { width:100%; max-width:1000px; margin:0 auto; text-align:center; }
+#content .about-services { margin:0 auto; width:100%; max-width:900px; }
+#content .about-services ul { float:left; width:25%; margin-bottom:80px; text-align:center; }
+#content .about-services ul li { margin:10px 0; }
+#content .about-services ul li:first-child { margin-bottom: 1.5em; }
+
+#content .contact { margin:0 auto; width:100%; max-width:900px; font-size:200%; }
+#content .contact ul { float:left; width:100%; margin-bottom:80px; text-align:center; }
+#content .contact ul li:first-child { font-family: 'MontserratBold', Helvetica; font-size:16px; }
+#content .contact ul li { margin:10px 0; }
+.maps { width:100%; height:500px; }
+.work-nav-visit a {  width:100%; max-width:320px; height:80px; display:block; line-height:80px; text-align:center; background-color:#FFF; border:#333 solid 1px; font-size:18px; margin:0 auto; }
+.work-nav-visit a:hover { -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; background-color:#333; color:#fff; }
+
+.work-nav-bottom a { width:50px; height:50px; display:block; background: url(../images/bg_nav_bottom.png) no-repeat; background-size: 50px 50px; margin:0 auto; }
+.work-nav-bottom a:hover { -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; opacity: .75; }
+
+footer { text-align:center; padding:10px 10px; font-size:10px; }
+footer span { font-size:16px; display:block; margin:30px 0; }
+footer a.nav-fb { width:40px; height:40px; display:block; line-height:40px; text-align:center; background-color:#333; border:#333 solid 1px; color:#fff; font-size:18px; margin:0 auto 30px; }
+footer a.nav-fb:hover { -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; background-color:#fff; color:#333; border:none; border:#333 solid 1px; padding:0; }
+footer a.nav-line { width:60px; height:60px; display:block; line-height:60px; text-align:center; background-color:#333; border:#333 solid 1px; color:#fff; font-size:16px; margin:0 auto 30px; }
+footer a.nav-line:hover { -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s; background-color:#fff; color:#333; border:none; border:#333 solid 1px; padding:0; }
+
+.simplefilter li { float: left; padding: 1.5em; cursor: pointer; font-size: 16px; }
+.simplefilter li:hover { background: #333333; color: #fff; }
+
+footer ul {
+  display: table;
+  margin: 0 auto;
+}
+footer ul li { float: left; margin: 0 2em; }
+
+/* SIDE BAR */
+/* General styles for all menus */
+.cbp-spmenu {
+	background-color: #333333;
+	position: fixed;
+	text-align:center;
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px ;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background-color: #fff;
+	color: #333333;
+}
+
+.cbp-spmenu a:active {
+	background-color: #fff;
+	color: #333333;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #444;
+	padding: 30px 0;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+	/* Medium desktop */
+}
+@media screen and (max-width: 768px) {
+	/* Small desktop & iPad view */
+	header a { margin-left:25px; }
+	button#showRightPush { margin-right:25px; }
+	div#google_login { margin-right:50px;display:flex; }
+	div#persoanl_info {margin-right:60px;display:flex; }
+	button#google_logout { margin-right:50px;;display:flex; }
+	#content .about-services ul { width:50%; }
+}
+@media screen and (max-width: 460px) {
+	/* Tablet view */
+	header a { margin-left:10px; }
+	button#showRightPush { margin-right:0px; }
+	div#google_login { margin-right:10px;display:flex;}
+	div#persoanl_info {margin-right:20px;display:flex; }
+	button#google_logout { margin-right:20px;display:flex; }
+	#content .about-services ul { width:100%; margin-bottom:40px; }
+	#content .contact { font-size:125%; }
+	.maps { height:350px; }
+	.simplefilter li { padding: 1em; }
+}

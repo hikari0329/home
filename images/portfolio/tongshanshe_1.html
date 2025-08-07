@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    
+    <title>
+    想想設計 | OOPS !!!!
+    </title>
+
+    <meta name="keywords" content="網站設計,平面設計,電子商務經營規劃,網路行銷,關鍵字廣告,關鍵字排序">
+    <meta name="description" content="我們喜歡簡單乾淨的東西，思考也很簡單，設計也很簡單。我們的風格就是 Simple is the Best！">
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="想想設計" />
+    <meta property="og:url" content="https://2think.com.tw/" />
+    <meta property="og:site_name" content="想想設計" />
+    <meta property="og:image" content="https://2think.com.tw/images/bg_logo_fb.jpg"/>
+    <meta property="og:description" content="我們喜歡簡單乾淨的東西，思考也很簡單，設計也很簡單。我們的風格就是 Simple is the Best！" />
+    <meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport">
+
+    <!-- 共用css -->
+    <link href="/css/main.css" rel="stylesheet">
+	
+    
+    
+</head>
+
+<body class="cbp-spmenu-push">
+	
+    <header class="clearfix">
+        <a href="/"></a>
+        <button id="showRightPush">Show/Hide Right Push Menu</button>
+    </header>
+    
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <a href="/work">WORK</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
+    </nav>
+    
+    <article class="clearfix">
+        
+        <div id="content">
+        	
+            <h2>oops !!!!</h2>
+            <p class="description">
+            很Sorry，您所找尋的頁面我們這邊沒有，請您「想想」正確的連結～
+            </p>
+            
+            <ul class="portfolio">
+            	<li><img src="/images/bg_oops.png" style="width:200px;"></li>
+            </ul>
+            
+            
+            <div class="work-nav-visit"><a href="/">VIEW OUR WORK</a></div>
+            
+            <hr>
+            
+            <div class="work-nav-bottom"><a href="/work"></a></div>
+            
+        </div>
+        
+    </article>
+    
+    <footer>
+        <ul>
+            <li><img src="/images/bg_logo_footer.png" height="50" alt="想想設計 - 網站設計,平面設計,電子商務經營規劃,關鍵字廣告,網路行銷"></li>
+        </ul>
+        <span>網站設計 • 平面設計 • 電子商務經營規劃<br><br><br><br>
+        想想有限公司<br>
+        TWO THINK CO., LTD.<br><br>
+        
+        02-2396-0978 #2110<br>
+        <a href="mailto:design@2think.com.tw" target="_blank">design@2think.com.tw</a><br><br>
+        
+        106 台北市大安區和平東路一段67號6樓之1<br><br></span>
+        
+        <!-- <a href="https://www.facebook.com/2think.tw" target="_blank" class="nav-fb">f</a>-->
+        <a href="https://lin.ee/rNYqZA6" target="_blank" class="nav-line">LINE</a>
+        
+        &copy; 2THINK
+    </footer>
+    
+    <!-- 共用js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/modernizr.custom.js"></script>
+    <script src="/js/classie.js"></script>
+    <script>
+		var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+		showRightPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'cbp-spmenu-push-toleft' );
+			classie.toggle( menuRight, 'cbp-spmenu-open' );
+			disableOther( 'showRightPush' );
+		};
+		function disableOther( button ) {
+			if( button !== 'showRightPush' ) {
+				classie.toggle( showRightPush, 'disabled' );
+			}
+		}
+	</script>
+    
+    
+        
+</body>
+</html>
