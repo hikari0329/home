@@ -1,0 +1,19 @@
+.modal .modal-dialog {
+	width: 100%;
+    height: auto;
+}
+
+.modal .modal-dialog div {
+	width: auto;
+    height: auto;
+	overflow-y: auto;
+}
+
+.modal-emb {
+	width: auto;
+    height: auto;
+}
+
+.thidden{
+	display:none;
+}		
